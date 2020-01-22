@@ -35,6 +35,19 @@ function addpather(method, varargin)
 
     switch method
 
+        %% To include all
+        case "all"
+
+            addpath(pwd);   % add root folder
+
+            % add subfolders
+            folders=dirFolder(pwd);
+            for i=1:length(folders)
+                addpath(genpath(folders{i}))
+            end
+
+            disp("Folders of current working and their subfolders are added to the path");
+
 end
 
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
