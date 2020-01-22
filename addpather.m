@@ -14,22 +14,18 @@ function addpather(method, varargin)
     %   - if method is "specific": pass the folder names that should be included
     %
     %  Folders specified in the 2nd argument can have a relative as well as absolute path.
-    % 
+    %
     % # Example run_addpather
     % Choose the method, and run the script.
     % ```matlab
     % % runs the function:
     % addpather("all");
-    %
-    % clear method;
     % ```
     %
     % Pass a 2nd output to include/exclude specific folders if you chose "all_exclude" or "specificFolders"
     % ```matlab
     % % runs the function:
     % addpather("specific", ["src", "examples"]); % or addpather("specific", {'src', 'examples'});
-    %
-    % clear method;
     % ```
 
 

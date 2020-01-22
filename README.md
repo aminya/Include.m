@@ -24,16 +24,12 @@ Choose the method, and run the script.
 ```matlab
 % runs the function:
 addpather("all");
-
-clear method;
 ```
 
 Pass a 2nd output to include/exclude specific folders if you chose "all_exclude" or "specificFolders"
 ```matlab
 % runs the function:
 addpather("specific", ["src", "examples"]); % or addpather("specific", {'src', 'examples'});
-
-clear method;
 ```
 
 # License
