@@ -48,6 +48,25 @@ function addpather(method, varargin)
 
             disp("Folders of current working and their subfolders are added to the path");
 
+        %% To include all excluding some folders
+        case "all_exclude"
+
+            % folders to be excluded
+            excludedFolders = varargin{1};
+
+            addpath(pwd);   % add root folder
+
+            folders=dirFolder(pwd); % all folders
+
+            % folders to be included
+            includedFolders=folders(~ismember(folders,excludedFolders));
+
+            for  i=1:length(includedFolders)
+                addpath(genpath(includedFolders{i}))
+            end
+
+            disp("Folders of current working and their subfolders excluding those specified are added to the path");
+
 end
 
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
