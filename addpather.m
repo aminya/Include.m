@@ -67,6 +67,20 @@ function addpather(method, varargin)
 
             disp("Folders of current working and their subfolders excluding those specified are added to the path");
 
+        %% To include specific folders
+        case "specific"
+
+            includedFolders = varargin{1};
+
+            addpath(pwd); % add root folder
+
+            for i=1:length(includedFolders)
+                addpath(genpath(includedFolders{i}))
+            end
+
+            disp("Sepecified folders and their subfolders are added to the path");
+
+        %% To include all under a folder with GUI
 end
 
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
