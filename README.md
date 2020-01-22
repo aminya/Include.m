@@ -1,11 +1,9 @@
 # AddPather.m
 Adds folders to Matlab's path temporarily. It is somehow similar to `include` in other languages.
 
-To use this package, add this folder to your path, and edit and run run_addpather.m accordingly.
+To use this package, add this folder to your path, and call `addpather()` function. Instead you can copy the content of this package to your project.
 
-You can add `run_addpather.m` to the beginning of your master code.
-
-Instead of adding this package to the path, you can copy the content of the folder to your project.
+Use `run_addpather` if you need an executable.
 
 # addpather function
 
@@ -19,15 +17,13 @@ Instead of adding this package to the path, you can copy the content of the fold
 Folders specified in the 2nd argument can have a relative as well as absolute path.
 
 # Example run_addpather
-Choose the method, and run the script.
+Choose the method, and run the function.
 ```matlab
-% runs the function:
 addpather("all");
 ```
 
 Pass a 2nd output to include/exclude specific folders if you chose "all_exclude" or "specificFolders"
 ```matlab
-% runs the function:
 addpather("specific", ["src", "examples"]); % or addpather("specific", {'src', 'examples'});
 ```
 
