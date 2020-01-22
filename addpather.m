@@ -81,6 +81,20 @@ function addpather(method, varargin)
             disp("Sepecified folders and their subfolders are added to the path");
 
         %% To include all under a folder with GUI
+        case "GUI_all"
+            rootDir = uigetdir(pwd, 'Select a folder');
+
+            addpath(rootDir); % add root folder
+
+            % add subfolders
+            folders=dirFolder(rootDir);
+            for i=1:length(folders)
+                addpath(genpath(folders{i}))
+            end
+
+            disp("selected folders and their subfolders are added to the path");
+
+        %% To include specific folders with GUI
 end
 
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
