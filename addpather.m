@@ -6,12 +6,12 @@ function addpather(method, varargin)
     % addpather function
     %
     % # Arguments:
-    % addpather(method::String, [folders::Array{String}/Cell{Char}])
+    % `addpather(method::String, [folders::Array{String}/Cell{Char}])`
     %
-    %  - method: can be "all","all_exclude","specific","GUI_all","GUI_specific"
+    %  - method: can be `"all","all_exclude","specific","GUI_all","GUI_specific"`
     %  - folders (optional):
-    %   - if method is "all_exclude": pass the folder names that should be excluded
-    %   - if method is "specific": pass the folder names that should be included
+    %   - if method is `"all_exclude"`: pass the folder names that should be excluded
+    %   - if method is `"specific"`: pass the folder names that should be included
     %
     %  Folders specified in the 2nd argument can have a relative as well as absolute path.
     %
