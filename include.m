@@ -1,12 +1,12 @@
-%% AddPather.m
+%% Include.m
 % Copyright (c) 2020 Amin Yahyaabadi - aminyahyaabadi74@gmail.com
 
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-function addpather(method, varargin)
-    % addpather function
+function include(method, varargin)
+    % include function
     %
     % # Arguments:
-    % `addpather(method::String, [folders::Array{String}/Cell{Char}])`
+    % `include(method::String, [folders::Array{String}/Cell{Char}])`
     %
     %  - method: can be `"all","all_exclude","specific","GUI_all","GUI_specific"`
     %  - folders (optional):
@@ -15,15 +15,15 @@ function addpather(method, varargin)
     %
     %  Folders specified in the 2nd argument can have a relative as well as absolute path.
     %
-    % # Example run_addpather
+    % # Example run_include
     % Choose the method, and run the function.
     % ```matlab
-    % addpather("all");
+    % include("all");
     % ```
     %
     % Pass a 2nd output to include/exclude specific folders if you chose "all_exclude" or "specificFolders"
     % ```matlab
-    % addpather("specific", ["src", "examples"]); % or addpather("specific", {'src', 'examples'});
+    % include("specific", ["src", "examples"]); % or include("specific", {'src', 'examples'});
     % ```
 
 

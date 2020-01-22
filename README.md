@@ -1,13 +1,13 @@
-# AddPather.m
+# Include.m
 Adds folders to Matlab's path temporarily. It is somehow similar to `include` in other languages.
 
-To use this package, add this folder to your path, and call `addpather()` function. Instead you can copy the content of this package to your project.
+To use this package, add this folder to your path, and call `include()` function. Instead you can copy the content of this package to your project.
 
-Use `run_addpather` if you need an executable.
+Use `run_include` if you need an executable.
 
-# addpather function
+# include function
 
-`addpather(method::String, [folders::Array{String}/Cell{Char}])`
+`include(method::String, [folders::Array{String}/Cell{Char}])`
 
  - method: can be `"all","all_exclude","specific","GUI_all","GUI_specific"`
  - folders (optional):
@@ -16,15 +16,15 @@ Use `run_addpather` if you need an executable.
 
 Folders specified in the 2nd argument can have a relative as well as absolute path.
 
-# Example run_addpather
+# Example run_include
 Choose the method, and run the function.
 ```matlab
-addpather("all");
+include("all");
 ```
 
 Pass a 2nd output to include/exclude specific folders if you chose "all_exclude" or "specificFolders"
 ```matlab
-addpather("specific", ["src", "examples"]); % or addpather("specific", {'src', 'examples'});
+include("specific", ["src", "examples"]); % or include("specific", {'src', 'examples'});
 ```
 
 # License
