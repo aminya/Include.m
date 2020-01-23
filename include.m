@@ -1,5 +1,7 @@
 %% Include.m
-% Copyright (c) 2020 Amin Yahyaabadi - aminyahyaabadi74@gmail.com
+% include folders in the path
+% Apache V2 License - Copyright (c) 2020 Amin Yahyaabadi - aminyahyaabadi74@gmail.com
+% https://github.com/aminya/Dispatch.m
 
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function include(method, varargin)
